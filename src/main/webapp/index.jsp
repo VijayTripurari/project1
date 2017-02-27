@@ -27,7 +27,9 @@ footer {
 </head>
 <body>
   
-      <H1><CENTER>E SHOP </CENTER> </H1>
+      <H1><CENTER>E SHOP </CENTER>  </H1>
+      Online store
+      
   
   <nav class="navbar navbar-default">
   
