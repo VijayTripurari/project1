@@ -16,7 +16,10 @@
 
 
 	<!-- configure the location of the controller -->
-	<context:component-scan base-package="net.vijay.eshop.controller" />
+	
+	<context:component-scan base-package="net.vijay.eshop.dao" />
+<context:component-scan base-package="net.vijay.eshop.controller" />
+<context:component-scan base-package="net.vijay.eshop.model" />
 
 
 	<!-- configure the resource view resolver to identify the view name to display -->

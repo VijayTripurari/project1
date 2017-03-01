@@ -20,24 +20,8 @@
   
   <script src="${js}/bootstrap.min.js"></script>
  
-  <style>
-   .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-  }
+ 
   
-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fafad2;
-    height: 200px;
-}
-  
-  </style>
 
 </head>
 <body>
@@ -54,11 +38,14 @@ footer {
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</span></a>
           <ul class="dropdown-menu">
-            <li><a href="/WEB-INF/views/ProductDetails">Mobile Phones</a></li>
+            <li><a href="ProductDetails">Mobile Phones</a></li>
                   
-            <li><a href="/WEB-INF/views/ProductDetails">Laptops</a></li>
+            <li><a href="ProductDetails">Laptops</a></li>
             
-             <li><a href="/WEB-INF/views/ProductDetails">Electronics</a></li>
+             <li><a href="ProductDetails">Electronics</a></li>
+              <li><a href="StaticProductDetails">Static Display</a></li>
+             <li><a href="product/DTspc">Data Table Static Display</a></li>
+             
           </ul>
         </li>
          <li><a href="#"  role="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Login</a></li>
@@ -92,12 +79,12 @@ footer {
        </div>  
       </div>
 
-<div class="form-group">
-       <label for="password" class="col-sm-3 control-label"">Password</label>
-       <div  class="col-sm-9">
-          <input type="text" id="password" name="password" class="form-control"/>
+      <div class="form-group">
+              <label for="password" class="col-sm-3 control-label"">Password</label>
+              <div  class="col-sm-9">
+              <input type="text" id="password" name="password" class="form-control"/>
        </div>  
-  </div>
+       </div>
 
   <div class="form-group">        
       <div class="col-sm-offset-3 col-sm-9">
@@ -191,8 +178,8 @@ footer {
     </div>
   </div>
 </div>
- <div class="col-sm-offset-3 col-sm-9">
-  <div class="container" style=" width: 70%; height: 60% ; position : fixed ; top : 201px; left :300px" >
+ <div class="col-sm-offset-2 col-sm-10">
+  <div class="container" style=" width: 70%; height: 30% ; position : absolute ; top : 10px; left :50px" >
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->

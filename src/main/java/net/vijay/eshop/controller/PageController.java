@@ -16,4 +16,15 @@ public class PageController {
 		
 	}
 	
+	@RequestMapping(value = {"/ProductDetails"})
+	public ModelAndView ProductDetailsRequest()
+	{
+		ModelAndView mav = new ModelAndView("ProductDetails");
+		
+		return mav;
+		
+	}
+	
+	
+	
 }
