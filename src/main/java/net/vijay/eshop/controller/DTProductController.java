@@ -12,28 +12,41 @@ import java.util.*;
 
 @Controller
 @RequestMapping("/product")
-public class DTProductController 
-{
-        @Autowired
-    private ProductManager manager;
-     
-    public Product get(int id)
-    {
-        return manager.get(id);
-    }
-   
-    @RequestMapping("/all/data")
-    	public @ResponseBody List<Product>  StaticProductDetails()
-	{
-		
-      return   manager.list();
-	}
-    @RequestMapping("/DTspc")
-    public ModelAndView getDTlist()
-    {
-    	return new ModelAndView("DTspc");
-    }
-    
-    
-}
+public class DTProductController {
+	@Autowired
+	private ProductManager manager;
 
+	public Product get(int id) {
+		return manager.get(id);
+	}
+
+	@RequestMapping("/addProduct")
+	public ModelAndView  testCase(Product p)
+	{
+	   boolean  result =	manager.add(p);
+	  	 if(result == true)
+	  	 {
+	  		 return new ModelAndView("TestSuccess");
+	  	 }
+	  	 else
+	  	 {
+	  		 return new ModelAndView("TestFailure");
+	  	 }
+         
+	
+	}
+	
+	@RequestMapping("/all/data")
+	public @ResponseBody List<Product> StaticProductDetails() {
+
+		return manager.list();
+	}
+	
+	
+
+	@RequestMapping("/DTspc")
+	public ModelAndView getDTlist() {
+		return new ModelAndView("DTspc" ).addObject("list", manager.list());
+	}
+
+}

@@ -23,15 +23,7 @@
   <style>
  
   
-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fafad2;
-    height: 150
-    px;
-}
+
 
 tr td {
   width : 60px fixed;
@@ -389,8 +381,8 @@ tr td {
    
  <!-- end LETV product modal code. -->
 
-<footer>
- Hi  this is the footer
+<footer class="navbar-fixed-bottom">
+  hello this is the footer
 </footer>
      
 </body>

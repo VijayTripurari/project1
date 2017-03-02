@@ -9,5 +9,6 @@ public interface ProductManager {
 
 	public Product get(int id);
 	public List<Product> list();
+	public boolean add(Product p);
 	
 }

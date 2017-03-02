@@ -25,15 +25,7 @@
   <style>
  
   
-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fafad2;
-    height: 150
-    px;
-}
+
 
 tr td {
   width : 60px fixed;
@@ -70,7 +62,7 @@ tr td {
       
       <c:forEach var="p" items="${list}">
       <tr>
-        <td><img src="${images}/${p.name}.jpg" width="15%" height="20%"></td>
+        <td><img src="${images}/${p.id}.jpg" width="15%" height="20%"></td>
         <td>${p.id} </td>
         <td>${p.name} </td>
         <td>${p.description} </td>
@@ -127,7 +119,9 @@ tr td {
 
 </div>  <!--  end of the container -->
 
-
+<footer class="navbar-fixed-bottom">
+  hello this is the footer
+</footer>
 
 </body>
 </html>
